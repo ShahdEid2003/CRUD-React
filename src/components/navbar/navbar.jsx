@@ -7,7 +7,7 @@ export default function navbar() {
         <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
           <div className="container">
             <a className="navbar-brand" href="#">
-              START Users
+              CRUD User
             </a>
             <button
               className="navbar-toggler"
