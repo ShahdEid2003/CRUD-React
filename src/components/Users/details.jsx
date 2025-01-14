@@ -16,6 +16,7 @@ export default function details() {
         setValue("password", data.user.password);
         setValue("phone", data.user.phone);
         
+        
     };
     useEffect(() => {
         getDetails();
@@ -24,7 +25,8 @@ export default function details() {
         const response = await axios.put(
             `${import.meta.env.VITE_BURL}/users/${id}`,
             {
-                userName: value.userName
+                userName: value.userName,
+                email: value.email,
             }
         );
     
